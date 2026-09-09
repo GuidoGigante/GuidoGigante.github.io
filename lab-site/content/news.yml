@@ -1,0 +1,32 @@
+# ---------------------------------------------------------------------------
+# Newest first. Markdown links work. The homepage shows the first six.
+# One line per item — this is a changelog, not a blog.
+# ---------------------------------------------------------------------------
+
+news:
+  - date: 2026-08-14
+    text: >
+      Lena's paper on boundary dynamics is out in *Cell Systems*.
+
+  - date: 2026-07-02
+    text: >
+      Wei Chen joins the lab as a PhD student. Welcome!
+
+  - date: 2026-06-20
+    text: >
+      The tracking pipeline hit v2.0 — twice as fast, and it now handles
+      divisions properly. [Release notes](https://github.com/example-lab/tracking).
+
+  - date: 2026-05-08
+    text: >
+      Anna gave an invited talk at the Physics of Living Systems meeting
+      in Lisbon.
+
+  - date: 2026-03-30
+    text: >
+      Priya defended her thesis. She is off to EMBL Heidelberg.
+
+  - date: 2026-02-11
+    text: >
+      We are recruiting a PhD student for autumn 2026. See
+      [openings](join/).

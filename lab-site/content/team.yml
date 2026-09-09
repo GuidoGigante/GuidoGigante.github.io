@@ -1,0 +1,87 @@
+# ---------------------------------------------------------------------------
+# To add someone: copy a block, change the fields, commit. Order within a
+# group is the order shown. Only `name` is required.
+#
+#   photo:  a file in static/img/. Leave it out and you get a tinted tile
+#           with the person's initials, which looks fine — do not feel
+#           obliged to chase people for headshots.
+#   links:  any label you like (Website, GitHub, Scholar, ORCID, Bluesky).
+# ---------------------------------------------------------------------------
+
+groups:
+  - title: Faculty
+    people:
+      - name: István Molnár
+        role: Principal investigator
+        # photo: istvan.jpg   # put the file in static/img/
+        bio: >
+          Physicist by training. Interested in how simple local rules
+          scale up into tissue-level behaviour, and in what happens when
+          they fail.
+        email: molnar@example.edu
+        links:
+          - label: Scholar
+            url: https://scholar.google.com/citations?user=EXAMPLE
+          - label: ORCID
+            url: https://orcid.org/0000-0000-0000-0000
+
+  - title: Postdocs
+    people:
+      - name: Anna Kovács
+        role: Postdoctoral researcher
+        bio: >
+          Builds the imaging pipeline and thinks about how to measure
+          coordination when you can only see part of the tissue.
+        links:
+          - label: GitHub
+            url: https://github.com/example
+
+      - name: Tomás Ribeiro
+        role: Postdoctoral researcher
+        bio: >
+          Works on inference for agent-based models — fitting rules to
+          trajectories without pretending the noise is Gaussian.
+
+  - title: PhD students
+    people:
+      - name: Lena Fischer
+        role: PhD student, 3rd year
+        bio: >
+          Studies what happens at the boundary between two tissues that
+          are following different rules.
+
+      - name: Yusuf Demir
+        role: PhD student, 2nd year
+        bio: >
+          Comparing collective migration across three species to work out
+          which parts of the mechanism are conserved.
+
+      - name: Wei Chen
+        role: PhD student, 1st year
+        bio: >
+          Rotating on the perturbation experiments. Joined from the
+          physics masters programme.
+
+  - title: Masters and undergraduates
+    people:
+      - name: Sofia Marchetti
+        role: Masters student
+        bio: Segmentation benchmarks for the imaging pipeline.
+
+      - name: Daniel Okoye
+        role: Undergraduate researcher
+        bio: Visualisation tooling for trajectory data.
+
+# Alumni are shown as a compact list at the bottom of the team page.
+# `next` is where they went — worth keeping up to date, prospective
+# students read this section closely.
+alumni:
+  - name: Priya Raman
+    role: PhD, 2024
+    next: Postdoc, EMBL Heidelberg
+  - name: Marc Dubois
+    role: Postdoc, 2021–2024
+    next: Group leader, Institut Curie
+  - name: Hannah Weiss
+    role: MSc, 2023
+    next: Data scientist, Zeiss

@@ -1,0 +1,76 @@
+# ---------------------------------------------------------------------------
+# Research projects, shown in this order. `blurb` appears on the homepage,
+# `body` only on the research page and accepts Markdown.
+#
+# `featured: true` puts it on the homepage. Two or three is plenty.
+# ---------------------------------------------------------------------------
+
+projects:
+  - title: Rules of collective migration
+    featured: true
+    status: Ongoing
+    blurb: >
+      Working out the smallest set of local interaction rules that can
+      reproduce the migration patterns we see in real tissue.
+    body: >
+      Cells in a migrating sheet have no global information, yet the sheet
+      moves as a unit. We fit agent-based models directly to trajectory
+      data and then ask which rules can be removed without breaking the
+      match. The interesting cases are the ones where two very different
+      rule sets fit equally well.
+
+
+      Funded by the National Research Fund, 2023–2027.
+    people: [István Molnár, Lena Fischer]
+    links:
+      - label: Code
+        url: https://github.com/example-lab/migration-rules
+
+  - title: Imaging tissue over long timescales
+    featured: true
+    status: Ongoing
+    blurb: >
+      A pipeline for tracking tens of thousands of cells across days of
+      imaging without losing identity at the messy moments.
+    body: >
+      Long acquisitions break tracking in predictable ways: division,
+      occlusion, drift. Rather than trying to make one tracker handle
+      everything, we detect where the tracking is likely wrong and hand
+      those segments back for correction. The whole pipeline is Python and
+      openly available.
+    people: [Anna Kovács, Sofia Marchetti]
+    links:
+      - label: Code
+        url: https://github.com/example-lab/tracking
+      - label: Documentation
+        url: https://example-lab.github.io/tracking
+
+  - title: What happens at tissue boundaries
+    featured: true
+    status: Ongoing
+    blurb: >
+      Two tissues following different rules have to meet somewhere. We
+      study what the interface between them does.
+    body: >
+      Most models of collective behaviour assume every agent follows the
+      same rule. Real tissue does not work that way. We are characterising
+      the boundary between populations with different migration rules,
+      both experimentally and in simulation.
+    people: [Lena Fischer, Tomás Ribeiro]
+
+  - title: Cross-species comparison
+    status: Starting
+    blurb: >
+      Comparing collective migration in three species to separate the
+      conserved mechanism from the species-specific detail.
+    people: [Yusuf Demir]
+
+  - title: Inference for agent-based models
+    status: Ongoing
+    blurb: >
+      Methods for fitting simulation models to data when the likelihood is
+      unavailable and the noise is badly behaved.
+    people: [Tomás Ribeiro]
+    links:
+      - label: Preprint
+        url: https://arxiv.org/abs/0000.00000

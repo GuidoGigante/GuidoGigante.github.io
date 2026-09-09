@@ -1,0 +1,61 @@
+# ---------------------------------------------------------------------------
+# Everything global about the site. Edit freely; nothing here is load-bearing
+# for the build except `name`.
+# ---------------------------------------------------------------------------
+
+name: Molnár Lab
+short_name: Molnár Lab
+
+# The one sentence at the top of the homepage. This is the most important
+# line on the whole site. Keep it under about 20 words and say what you
+# actually study, not what field you are in.
+statement: >
+  We study how thousands of cells coordinate their movement
+  without any of them being in charge.
+
+# One or two sentences of context directly under the statement.
+intro: >
+  We combine live imaging, agent-based models and a lot of Python to
+  work out the local rules that produce collective behaviour in
+  developing tissue. We are based in the Department of Systems Biology
+  and we take students from biology, physics and computer science.
+
+institution: Department of Systems Biology, University of Somewhere
+address: Building 12, Room 3.40, Rue de l'Exemple 5, 1000 Somewhere
+email: lab@example.edu
+
+# Shown in the footer. Delete any you do not use.
+links:
+  - label: GitHub
+    url: https://github.com/example-lab
+  - label: Google Scholar
+    url: https://scholar.google.com/citations?user=EXAMPLE
+  - label: Bluesky
+    url: https://bsky.app/profile/example.bsky.social
+
+# Optional: a wide figure under the opening statement. A real image from
+# your work is the single best thing you can put on this page. Put the file
+# in static/img/ and name it here.
+# hero_image: tissue.jpg
+# hero_image_alt: Time-lapse of a migrating epithelial sheet.
+# hero_caption: Collective migration in a wounded epithelium, 14 hours.
+
+# The recruiting box at the bottom of the homepage. Delete this line to
+# remove the box entirely.
+join_note: >
+  We take students from several backgrounds and we are happy to hear from
+  people who are not sure they qualify.
+
+# Single knob for the whole colour scheme.
+accent: "#0E6E62"
+
+# Names that should be bolded in the publication list, on top of everyone
+# listed in team.yml (which is added automatically). Use this for former
+# members and for name variants that appear on papers.
+lab_authors:
+  - Anna Kovács
+  - I. Molnár
+
+footer_note: >
+  Site built from plain text files.
+  [Source on GitHub](https://github.com/example-lab/example-lab.github.io).
