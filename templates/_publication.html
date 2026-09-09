@@ -1,0 +1,15 @@
+<li class="pub" data-type="{{ p.type }}"{% if p.selected %} data-selected="true"{% endif %}>
+  <p class="pub-title">{{ p.title }}</p>
+  <p class="pub-authors">
+    {% for a in p.authors %}{% if a.is_lab %}<b>{{ a.name }}</b>{% else %}{{ a.name }}{% endif %}{% if not loop.last %}, {% endif %}{% endfor %}
+  </p>
+  <p class="pub-meta">
+    {% if p.venue %}<i>{{ p.venue }}</i>{% endif %}{% if p.venue and p.year and not hide_year %}, {% endif %}{{ p.year if p.year and not hide_year else '' }}{% if p.note %}. {{ p.note }}{% endif %}
+    {% if p.award %}<span class="award">{{ p.award }}</span>{% endif %}
+  </p>
+  {% if p.links %}
+  <p class="pub-links">
+    {% for l in p.links %}<a href="{{ l.url }}">{{ l.label }}</a>{% endfor %}
+  </p>
+  {% endif %}
+</li>

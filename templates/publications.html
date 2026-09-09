@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="shell page-head">
+  <h1>Publications</h1>
+  <p class="lede">{{ pubs | length }} papers. Lab members in bold. Everything
+    listed here is available as a preprint or open access — if a link is
+    broken, <a href="mailto:{{ site.email }}">tell us</a>.</p>
+</div>
+
+<div class="shell">
+  <div class="filters" role="group" aria-label="Filter publications">
+    <button type="button" data-filter="all" aria-pressed="true">All</button>
+    <button type="button" data-filter="selected" aria-pressed="false">Selected</button>
+    {% for t in pub_types %}
+    <button type="button" data-filter="{{ t }}" aria-pressed="false">{{ t }}</button>
+    {% endfor %}
+  </div>
+
+  {% set hide_year = true %}
+  {% for group in pub_years %}
+  <section class="year">
+    <h2 class="year-label">{{ group.year }}</h2>
+    <ol class="pub-list">
+      {% for p in group.entries %}
+      {% include "_publication.html" %}
+      {% endfor %}
+    </ol>
+  </section>
+  {% endfor %}
+
+  <p class="empty" hidden>Nothing matches that filter.</p>
+</div>
+
+<script src="{{ root }}static/js/filter.js" defer></script>
+{% endblock %}

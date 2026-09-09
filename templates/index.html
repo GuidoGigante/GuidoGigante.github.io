@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+{% block content %}
+
+<section class="hero shell">
+  <h1 class="statement">{{ site.statement | trim }}</h1>
+  <div class="hero-intro">{{ site.intro_html | safe }}</div>
+  {% if site.hero_image %}
+  <figure style="margin:0">
+    <img class="hero-image" src="{{ root }}static/img/{{ site.hero_image }}" alt="{{ site.hero_image_alt | default('', true) }}">
+    {% if site.hero_caption %}<figcaption class="hero-caption">{{ site.hero_caption }}</figcaption>{% endif %}
+  </figure>
+  {% endif %}
+</section>
+
+<section class="band">
+  <div class="shell">
+    <h2 class="section-head">What we work on</h2>
+    <div class="focus">
+      {% for p in projects if p.featured %}
+      <article class="focus-item">
+        <h3><a href="{{ root }}projects/#{{ p.title | lower | replace(' ', '-') | replace(',', '') }}">{{ p.title }}</a></h3>
+        <p>{{ p.blurb | trim }}</p>
+      </article>
+      {% endfor %}
+    </div>
+    <p class="more"><a href="{{ root }}projects/">All research projects</a></p>
+  </div>
+</section>
+
+<div class="shell split">
+
+  <section class="split-main">
+    <h2 class="section-head">Selected publications</h2>
+    <ol class="pub-list">
+      {% for p in pubs if p.selected %}
+      {% include "_publication.html" %}
+      {% endfor %}
+    </ol>
+    <p class="more"><a href="{{ root }}publications/">All publications</a></p>
+  </section>
+
+  <section class="split-side">
+    <h2 class="section-head">News</h2>
+    <ol class="news">
+      {% for n in news[:6] %}
+      <li>
+        <time datetime="{{ n.date }}">{{ n.date.strftime('%d %b %Y') if n.date.strftime else n.date }}</time>
+        <p>{{ n.html | safe }}</p>
+      </li>
+      {% endfor %}
+    </ol>
+  </section>
+
+</div>
+
+<section class="band contact-band">
+  <div class="shell">
+    <h2 class="section-head">Interested in joining?</h2>
+    <p class="lede">We take students from several backgrounds and we are happy
+      to hear from people who are not sure they qualify.</p>
+    <p class="more"><a href="{{ root }}join/">What we have open</a></p>
+  </div>
+</section>
+
+{% endblock %}

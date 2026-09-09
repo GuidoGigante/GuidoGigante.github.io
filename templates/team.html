@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="shell page-head">
+  <h1>Team</h1>
+  <p class="lede">The lab is deliberately mixed — people arrive from biology,
+    physics and computer science, and nobody is expected to already know
+    everything.</p>
+</div>
+
+<div class="shell">
+  {% for group in team.groups %}
+  <section class="roster">
+    <h2 class="section-head">{{ group.title }}</h2>
+    <div class="people">
+      {% for person in group.people %}
+      <article class="person">
+        {% if person.photo %}
+        <img class="portrait" src="{{ root }}static/img/{{ person.photo }}" alt="" loading="lazy">
+        {% else %}
+        <div class="portrait portrait-blank" aria-hidden="true"><span>{{ person.initials }}</span></div>
+        {% endif %}
+        <div class="person-text">
+          <h3>{{ person.name }}</h3>
+          {% if person.role %}<p class="person-role">{{ person.role }}</p>{% endif %}
+          {% if person.bio_html %}{{ person.bio_html | safe }}{% endif %}
+          {% if person.email or person.links %}
+          <p class="person-links">
+            {% if person.email %}<a href="mailto:{{ person.email }}">Email</a>{% endif %}
+            {% for l in person.links %}<a href="{{ l.url }}">{{ l.label }}</a>{% endfor %}
+          </p>
+          {% endif %}
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+  </section>
+  {% endfor %}
+
+  {% if team.alumni %}
+  <section class="roster">
+    <h2 class="section-head">Alumni</h2>
+    <ul class="alumni">
+      {% for a in team.alumni %}
+      <li>
+        <span class="alum-name">{{ a.name }}</span>
+        <span class="alum-role">{{ a.role }}</span>
+        {% if a.next %}<span class="alum-next">Now: {{ a.next }}</span>{% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+</div>
+
+{% endblock %}

@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="shell page-head">
+  <h1>Research</h1>
+  <p class="lede">{{ site.statement | trim }} These are the questions we are
+    working on at the moment.</p>
+</div>
+
+<div class="shell">
+  {% for p in projects %}
+  <article class="project" id="{{ p.title | lower | replace(' ', '-') | replace(',', '') }}">
+    <div class="project-side">
+      {% if p.status %}<p class="status">{{ p.status }}</p>{% endif %}
+      {% if p.people %}
+      <p class="project-people">{% for person in p.people %}{{ person }}{% if not loop.last %}<br>{% endif %}{% endfor %}</p>
+      {% endif %}
+    </div>
+    <div class="project-body">
+      <h2>{{ p.title }}</h2>
+      <p class="project-blurb">{{ p.blurb | trim }}</p>
+      {% if p.body_html %}{{ p.body_html | safe }}{% endif %}
+      {% if p.image %}
+      <img class="project-image" src="{{ root }}static/img/{{ p.image }}" alt="" loading="lazy">
+      {% endif %}
+      {% if p.links %}
+      <p class="pub-links">
+        {% for l in p.links %}<a href="{{ l.url }}">{{ l.label }}</a>{% endfor %}
+      </p>
+      {% endif %}
+    </div>
+  </article>
+  {% endfor %}
+</div>
+
+{% endblock %}
