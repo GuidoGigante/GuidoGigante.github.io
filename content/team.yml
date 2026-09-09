@@ -1,3 +1,4 @@
+# team.yml
 # ---------------------------------------------------------------------------
 # To add someone: copy a block, change the fields, commit. Order within a
 # group is the order shown. Only `name` is required.
@@ -9,79 +10,97 @@
 # ---------------------------------------------------------------------------
 
 groups:
-  - title: Faculty
+  - title: Principal Investigator
     people:
-      - name: István Molnár
-        role: Principal investigator
-        # photo: istvan.jpg   # put the file in static/img/
+      - name: Guido Gigante
+        role: Head of Lab
+        photo: gigante.png   # put the file in static/img/
         bio: >
-          Physicist by training. Interested in how simple local rules
-          scale up into tissue-level behaviour, and in what happens when
-          they fail.
-        email: molnar@example.edu
+          Physicist by training and former Chief Data Officer. Focuses on 
+          extracting hidden, high-dimensional dynamics from complex biological data—spanning 
+          from molecular kinetics (RT-QuIC) to epidemiological networks and population health.
+        email: guido.gigante@iss.it
         links:
           - label: Scholar
-            url: https://scholar.google.com/citations?user=EXAMPLE
+            url: https://scholar.google.it/citations?user=s7SHhbIAAAAJ&hl=en&oi=ao
+          - label: LinkedIn
+            url: https://www.linkedin.com/in/guido-gigante-83210ba/
           - label: ORCID
-            url: https://orcid.org/0000-0000-0000-0000
+            url: https://orcid.org/0000-0003-1899-4579
 
-  - title: Postdocs
+  - title: Researchers
     people:
-      - name: Anna Kovács
-        role: Postdoctoral researcher
+      - name: Cristiano Capone
+        role: Researcher
+        photo: capone.png
         bio: >
-          Builds the imaging pipeline and thinks about how to measure
-          coordination when you can only see part of the tissue.
+          Bridges computational neuroscience and AI. Develops biologically plausible 
+          learning rules, spiking neural networks, and advanced time-series models 
+          for both adaptive control and predictive public health.
         links:
-          - label: GitHub
-            url: https://github.com/example
+          - label: Scholar
+            url: https://scholar.google.it/citations?user=wyHFdf4AAAAJ&hl=en&oi=ao
+          - label: ORCID
+            url: https://orcid.org/0000-0002-9958-2551
+          # - label: GitHub
+          #  url: https://github.com/his-profile
 
-      - name: Tomás Ribeiro
-        role: Postdoctoral researcher
+      - name: Andrea Ciardiello
+        role: Researcher
+        photo: ciardiello.png
         bio: >
-          Works on inference for agent-based models — fitting rules to
-          trajectories without pretending the noise is Gaussian.
+          The lab's champion for trustworthy medical AI. Focuses on Explainable AI (XAI) 
+          and computer vision, ensuring that algorithms used in diagnostic imaging and 
+          clinical settings provide mathematically sound and clinically faithful reasoning.
+        links:
+          - label: ORCID
+            url: https://orcid.org/0000-0003-1903-4406
 
-  - title: PhD students
+  - title: Technical & Engineering Staff
     people:
-      - name: Lena Fischer
-        role: PhD student, 3rd year
+      - name: Vittorio Dante
+        role: Lead Technical Specialist
+        # photo: dante.jpg
         bio: >
-          Studies what happens at the boundary between two tissues that
-          are following different rules.
+          The lab's anchor to the physical world. Designs custom embedded electronics 
+          and hardware integrations, bridging the gap between software algorithms and 
+          real-world sensor deployment (such as the MosAICo smart traps).
+        # links:
+          # - label: LinkedIn
+            # url: https://www.linkedin.com/in/HIS-PROFILE
 
-      - name: Yusuf Demir
-        role: PhD student, 2nd year
-        bio: >
-          Comparing collective migration across three species to work out
-          which parts of the mechanism are conserved.
+# ---------------------------------------------------------------------------
+# TEMPLATES FOR FUTURE MEMBERS (Leave these commented out or delete them)
+# ---------------------------------------------------------------------------
+#  - title: Postdocs and PhD Students
+#    people:
+#      - name: Future Member
+#        role: Postdoctoral Researcher
+#        bio: >
+#          Add bio here when new members join.
+#        links:
+#          - label: GitHub
+#            url: https://github.com/example
 
-      - name: Wei Chen
-        role: PhD student, 1st year
-        bio: >
-          Rotating on the perturbation experiments. Joined from the
-          physics masters programme.
-
-  - title: Masters and undergraduates
+  - title: Postdocs and PhD Students
     people:
-      - name: Sofia Marchetti
-        role: Masters student
-        bio: Segmentation benchmarks for the imaging pipeline.
-
-      - name: Daniel Okoye
-        role: Undergraduate researcher
-        bio: Visualisation tooling for trajectory data.
+      - name: Gabriele D'Andrea
+        role: PhD Student
+        # photo: dandrea.jpg
+        bio: >
+          PhD student in Statistics at Sapienza University. Applies advanced statistical 
+          learning and tensor clustering to complex biological time-series, leading the lab's 
+          computational phenotyping work on RT-QuIC assays for prion diseases.
+        # links:
+          # - label: Scholar
+            # url: https://scholar.google.com/citations?user=HIS-ID
+          # - label: LinkedIn
+            # url: https://www.linkedin.com/in/HIS-PROFILE
 
 # Alumni are shown as a compact list at the bottom of the team page.
 # `next` is where they went — worth keeping up to date, prospective
 # students read this section closely.
 alumni:
-  - name: Priya Raman
-    role: PhD, 2024
-    next: Postdoc, EMBL Heidelberg
-  - name: Marc Dubois
-    role: Postdoc, 2021–2024
-    next: Group leader, Institut Curie
-  - name: Hannah Weiss
-    role: MSc, 2023
-    next: Data scientist, Zeiss
+  # - name: Name Surname
+  #   role: Postdoc, 2021–2024
+  #   next: Next Position, Next Institute

@@ -1,55 +1,59 @@
+# site.yml
 # ---------------------------------------------------------------------------
 # Everything global about the site. Edit freely; nothing here is load-bearing
 # for the build except `name`.
 # ---------------------------------------------------------------------------
 
-name: Molnár Lab
-short_name: Molnár Lab
+name: Quantitative Health Models and Bioinspired Technologies
+short_name: QUBIT Lab
 
 # The one sentence at the top of the homepage. This is the most important
 # line on the whole site. Keep it under about 20 words and say what you
 # actually study, not what field you are in.
 statement: >
-  We study how thousands of cells coordinate their movement
-  without any of them being in charge.
+  Translating biological complexity into proactive health solutions, from molecular kinetics to the global spread of disease.
 
 # One or two sentences of context directly under the statement.
 intro: >
-  We combine live imaging, agent-based models and a lot of Python to
-  work out the local rules that produce collective behaviour in
-  developing tissue. We are based in the Department of Systems Biology
-  and we take students from biology, physics and computer science.
+  Based at the Italian National Institute of Health (ISS), we combine explainable AI, high-dimensional time-series analysis, and sensor integration to turn complex biological signals into trustworthy clinical and epidemiological insights. 
 
-institution: Department of Systems Biology, University of Somewhere
-address: Building 12, Room 3.40, Rue de l'Exemple 5, 1000 Somewhere
-email: lab@example.edu
+institution: Istituto Superiore di Sanità (ISS)
+address: Viale Regina Elena 299, 00161 Rome, Italy
+email: guido.gigante@iss.it
 
 # Shown in the footer. Delete any you do not use.
 links:
   - label: GitHub
-    url: https://github.com/example-lab
-  - label: Google Scholar
-    url: https://scholar.google.com/citations?user=EXAMPLE
-  - label: Bluesky
-    url: https://bsky.app/profile/example.bsky.social
+    url: https://github.com/YOUR-LAB-OR-PROFILE
+  # - label: Google Scholar
+    # url: https://scholar.google.com/citations?user=YOUR-ID
+  # - label: LinkedIn
+    # url: https://www.linkedin.com/in/YOUR-PROFILE
 
 # Optional: a wide figure under the opening statement. A real image from
 # your work is the single best thing you can put on this page. Put the file
 # in static/img/ and name it here.
-# hero_image: tissue.jpg
-# hero_image_alt: Time-lapse of a migrating epithelial sheet.
-# hero_caption: Collective migration in a wounded epithelium, 14 hours.
+# hero_image: qubit_hero.jpg
+# hero_image_alt: A visualization bridging molecular RT-QuIC curves with global epidemiological risk maps.
+# hero_caption: Fusing multi-scale biological data to anticipate public health threats.
 
-# Single knob for the whole colour scheme.
-accent: "#0E6E62"
+# Single knob for the whole colour scheme. 
+# Suggestion: A deep, trustworthy clinical blue/slate (#1F4E79) or tech-teal (#0E6E62).
+accent: "#1F4E79"
 
 # Names that should be bolded in the publication list, on top of everyone
 # listed in team.yml (which is added automatically). Use this for former
 # members and for name variants that appear on papers.
 lab_authors:
-  - Anna Kovács
-  - I. Molnár
+  - Guido Gigante
+  - G. Gigante
+  - Cristiano Capone
+  - C. Capone
+  - Andrea Ciardiello
+  - A. Ciardiello
+  - Vittorio Dante
+  - V. Dante
 
 footer_note: >
   Site built from plain text files.
-  [Source on GitHub](https://github.com/example-lab/example-lab.github.io).
+  [Source on GitHub](https://github.com/YOUR-REPO/YOUR-REPO.github.io).

@@ -1,3 +1,4 @@
+# projects.yml
 # ---------------------------------------------------------------------------
 # Research projects, shown in this order. `blurb` appears on the homepage,
 # `body` only on the research page and accepts Markdown.
@@ -6,71 +7,76 @@
 # ---------------------------------------------------------------------------
 
 projects:
-  - title: Rules of collective migration
+  - title: Smart Epidemiological Surveillance
     featured: true
     status: Ongoing
     blurb: >
-      Working out the smallest set of local interaction rules that can
-      reproduce the migration patterns we see in real tissue.
+      Leveraging AI, IoT sensors, and Graph Neural Networks to monitor vectors, 
+      predict outbreaks, and reconstruct global pathogen-drug resistance networks.
     body: >
-      Cells in a migrating sheet have no global information, yet the sheet
-      moves as a unit. We fit agent-based models directly to trajectory
-      data and then ask which rules can be removed without breaking the
-      match. The interesting cases are the ones where two very different
-      rule sets fit equally well.
+      We design advanced surveillance ecosystems that fuse diverse data streams to anticipate 
+      public health threats. At the European level, we are part of the **GeoAI4EI** consortium 
+      (2025–2029), where we are developing **DARDO**—a disease-agnostic prediction system that 
+      forecasts respiratory outbreaks using Recurrent and Graph Neural Networks. 
+      
+      We also apply these advanced topological models to Antimicrobial Resistance (AMR) via our 
+      **Mutagraph** framework, reconstructing global susceptibility networks to anticipate abrupt 
+      shifts in pathogen-drug resistance. In the field, we integrate custom hardware and software 
+      for automated disease vector recognition, such as the **MosAICo** smart traps.
 
+      Funded by Horizon Europe (GeoAI4EI, 2025–2029).
+    people: [Guido Gigante, Andrea Ciardiello]
 
-      Funded by the National Research Fund, 2023–2027.
-    people: [István Molnár, Lena Fischer]
-    links:
-      - label: Code
-        url: https://github.com/example-lab/migration-rules
-
-  - title: Imaging tissue over long timescales
+  - title: Explainable AI (XAI) in Medical Imaging
     featured: true
     status: Ongoing
     blurb: >
-      A pipeline for tracking tens of thousands of cells across days of
-      imaging without losing identity at the messy moments.
+      Building the metrological foundations for trustworthy AI by developing formal 
+      verification frameworks, uncertainty quantification, and bias mitigation strategies.
     body: >
-      Long acquisitions break tracking in predictable ways: division,
-      occlusion, drift. Rather than trying to make one tracker handle
-      everything, we detect where the tracking is likely wrong and hand
-      those segments back for correction. The whole pipeline is Python and
-      openly available.
-    people: [Anna Kovács, Sofia Marchetti]
-    links:
-      - label: Code
-        url: https://github.com/example-lab/tracking
-      - label: Documentation
-        url: https://example-lab.github.io/tracking
+      To bridge the gap between complex algorithms and physician trust, we focus on the rigorous 
+      assessment of Explainable AI. Through the ongoing **MAIBAI** project, we are developing a 
+      metrological framework to ensure AI tools for diagnostic imaging—such as mammography—are 
+      robust, fair, and clinically faithful. 
+      
+      This builds directly upon our foundational work in the **MUCCA** project, which explored 
+      multidisciplinary use-cases in physics and medicine to highlight and overcome the weaknesses 
+      of available "black box" XAI methods.
 
-  - title: What happens at tissue boundaries
+      Funded by the European Partnership on Metrology (MAIBAI, 2023–2026) and CHIST-ERA (MUCCA, 2021–2024).
+    people: [Guido Gigante, Andrea Ciardiello]
+    links:
+      - label: MAIBAI Project Website
+        url: https://www.maibaiproject.eu/
+      - label: MUCCA Project Website
+        url: https://mucca-project.github.io/
+
+  - title: Digital Biomarkers & Kinetic Phenotyping
     featured: true
     status: Ongoing
     blurb: >
-      Two tissues following different rules have to meet somewhere. We
-      study what the interface between them does.
+      Decoding dynamic physiological and molecular time-series to proactively 
+      predict disease progression and risk.
     body: >
-      Most models of collective behaviour assume every agent follows the
-      same rule. Real tissue does not work that way. We are characterising
-      the boundary between populations with different migration rules,
-      both experimentally and in simulation.
-    people: [Lena Fischer, Tomás Ribeiro]
+      We develop predictive machine-learning models that analyze dense, continuous data streams. 
+      This spans from tracking human physiological states using wearable metabolic monitors to 
+      analyzing the complex fluorescence trajectories of protein-amplification assays, such as 
+      RT-QuIC for prion diseases. 
+      
+      By treating these signals as rich, multi-dimensional time trajectories rather than simple 
+      binary snapshots, we uncover hidden kinetic phenotypes and dynamic biomarkers that can 
+      predict clinical outcomes.
+    people: [Guido Gigante, Gabriele D'Andrea, Cristiano Capone]
 
-  - title: Cross-species comparison
-    status: Starting
-    blurb: >
-      Comparing collective migration in three species to separate the
-      conserved mechanism from the species-specific detail.
-    people: [Yusuf Demir]
-
-  - title: Inference for agent-based models
+  - title: Bio-Inspired Adaptive Control
+    featured: false
     status: Ongoing
     blurb: >
-      Methods for fitting simulation models to data when the likelihood is
-      unavailable and the noise is badly behaved.
-    people: [Tomás Ribeiro]
-    links:
-      - label: Preprint
-        url: https://arxiv.org/abs/0000.00000
+      Translating biological neural mechanisms into practical algorithms for robotics, 
+      prosthetics, and autonomous systems.
+    body: >
+      We explore how mechanisms found in the brain—such as dendritic computation, gain modulation, 
+      and multiple timescales—can inspire agile, low-power adaptation. We apply these theoretical 
+      principles to spiking neural networks and neuromorphic hardware. This approach enables 
+      artificial agents to learn and adapt to new goals in real-time with extreme sample efficiency.
+    people: [Cristiano Capone, Guido Gigante]
