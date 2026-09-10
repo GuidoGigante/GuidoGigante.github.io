@@ -120,8 +120,12 @@ img { max-width: 100%; height: auto; display: block; }
 
 .hero-image {
   margin-top: clamp(2.5rem, 5vw, 4rem);
-  width: 100%;
+  width: 70%;
   border-radius: 2px;
+}
+
+@media (max-width: 46rem) {
+  .hero-image { width: 100%; }
 }
 .hero-caption { margin: 0.75rem 0 0; font-size: 0.85rem; color: var(--muted); }
 
