@@ -36,7 +36,7 @@ links:
 # Optional: a wide figure under the opening statement. A real image from
 # your work is the single best thing you can put on this page. Put the file
 # in static/img/ and name it here.
-hero_image: hero_image.jpg
+hero_image: hero_image.png
 hero_image_alt: >
   A three-panel scientific plot comparing real and simulated data. The left and right panels show heatmaps of multi-unit neural activity over time, demonstrating a close match between the biological data and the model's simulation. The centre panel shows overlapping histograms of observed and predicted reaction times.
 hero_caption: >
