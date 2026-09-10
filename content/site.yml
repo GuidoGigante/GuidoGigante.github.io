@@ -11,7 +11,8 @@ short_name: QUBIT Lab
 # line on the whole site. Keep it under about 20 words and say what you
 # actually study, not what field you are in.
 statement: >
-  Translating biological complexity into proactive health solutions, from molecular kinetics to the global spread of disease.
+  We build quantitative models to predict and track disease across all scales—from molecular kinetics to global spread.
+#   Translating biological complexity into proactive health solutions, from molecular kinetics to the global spread of disease.
 
 # One or two sentences of context directly under the statement.
 intro: >
@@ -23,8 +24,10 @@ email: guido.gigante@iss.it
 
 # Shown in the footer. Delete any you do not use.
 links:
-  - label: GitHub
-    url: https://github.com/YOUR-LAB-OR-PROFILE
+  - label: GitHub (GG)
+    url: https://github.com/GuidoGigante
+  - label: GitHub (Pumazzo)
+    url: https://github.com/pumazzo
   # - label: Google Scholar
     # url: https://scholar.google.com/citations?user=YOUR-ID
   # - label: LinkedIn
@@ -33,9 +36,11 @@ links:
 # Optional: a wide figure under the opening statement. A real image from
 # your work is the single best thing you can put on this page. Put the file
 # in static/img/ and name it here.
-# hero_image: qubit_hero.jpg
-# hero_image_alt: A visualization bridging molecular RT-QuIC curves with global epidemiological risk maps.
-# hero_caption: Fusing multi-scale biological data to anticipate public health threats.
+hero_image: hero_image.jpg
+hero_image_alt: >
+  A three-panel scientific plot comparing real and simulated data. The left and right panels show heatmaps of multi-unit neural activity over time, demonstrating a close match between the biological data and the model's simulation. The centre panel shows overlapping histograms of observed and predicted reaction times.
+hero_caption: >
+  From complex dynamics to emergent behavior: our generative models accurately predict macroscopic actions entirely from high-dimensional neural data.
 
 # Single knob for the whole colour scheme. 
 # Suggestion: A deep, trustworthy clinical blue/slate (#1F4E79) or tech-teal (#0E6E62).
@@ -46,14 +51,10 @@ accent: "#1F4E79"
 # members and for name variants that appear on papers.
 lab_authors:
   - Guido Gigante
-  - G. Gigante
   - Cristiano Capone
-  - C. Capone
   - Andrea Ciardiello
-  - A. Ciardiello
   - Vittorio Dante
-  - V. Dante
 
 footer_note: >
   Site built from plain text files.
-  [Source on GitHub](https://github.com/YOUR-REPO/YOUR-REPO.github.io).
+  [Source on GitHub](https://github.com/GuidoGigante/GuidoGigante.github.io).

@@ -2,6 +2,7 @@
 {% block content %}
 
 <section class="hero shell">
+  <p class="hero-name">{{ site.name }}</p>
   <h1 class="statement">{{ site.statement | trim }}</h1>
   <div class="hero-intro">{{ site.intro_html | safe }}</div>
   {% if site.hero_image %}

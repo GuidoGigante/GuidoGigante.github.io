@@ -101,6 +101,11 @@ groups:
 # `next` is where they went — worth keeping up to date, prospective
 # students read this section closely.
 alumni:
+  - name: Alberto Tubito
+    role: PhD student, 2023–2026
+  - name: Noemi Sarleti
+    role: PhD student, 2023–2026
+  #   next: Next Position, Next Institute
   # - name: Name Surname
   #   role: Postdoc, 2021–2024
   #   next: Next Position, Next Institute
